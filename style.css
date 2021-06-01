@@ -6,16 +6,22 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #D3D4E7;
+    height: 80rem;
 }
 
 .container {
     width: min(90vw, 800px); 
     margin: auto; 
+    margin-top: 2.5rem;
     border: 1px solid #e6e6e6;
+    border-radius: 25px;
+    background-color: white;
 }
 
 header {
     padding: 2rem 0 1rem;
+    border-bottom: 1px solid #e6e6e6;
     text-align: center;
     font-weight: 600;
 }
