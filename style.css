@@ -59,7 +59,8 @@ small {
     padding: 40px;
 }
 
-.free.active {
+
+.free {
     background-color: #BAFF9B;;
     border-radius: 25px;
     color: #00911F;
@@ -71,6 +72,14 @@ small {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.free.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 button {
