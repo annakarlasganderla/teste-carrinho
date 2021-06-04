@@ -28,6 +28,11 @@ header {
 
 .product {
     display: inline-flex;
+    
+}
+
+.product:hover {
+    opacity: 0.8;
 }
 
 img {
