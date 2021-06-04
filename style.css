@@ -27,8 +27,7 @@ header {
 }
 
 .product {
-    display: inline-flex;
-    
+    display: flex;
 }
 
 .product:hover {

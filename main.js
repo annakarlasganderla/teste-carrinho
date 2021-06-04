@@ -31,17 +31,15 @@ const items = {
 
         let item = prod1 + prod2 + prod3 + prod4
 
-        return item 
-    },
-    frete() {
-       let total = items.total(item)
-        if (total > 10) {
+        if (item > 10) {
             document.querySelector('.free')
             .classList.add('active')
         } else {
             document.querySelector('.free')
             .classList.remove('active')
         }
+
+        return item 
     }
 }
 
@@ -59,12 +57,14 @@ const DOM = {
         const amount = utils.formatCurrency(list.amount)
 
         const html = `
+        <div class="product">
             <img src="./images/trufa1.jpeg" alt="trufa de morango">
              <span>
                  <h3>Trufa de morango</h3>
                  <small>R$ 1,23</small>
                  <h4 class="valor">${amount}</h4>
              </span>
+        </div>
         `
         return html
     }, 
@@ -100,13 +100,15 @@ console.log(DOM.updateTotal())
 /*
 var total = 10
 
-if (total >= 10) {
-    document.querySelector('.free')
-    .classList.add('active')
-} else {
-    document.querySelector('.free')
-    .classList.remove('active')
-}
+if (total > 10) {
+            document.querySelector('.free')
+            .classList.add('active')
+        } else {
+            document.querySelector('.free')
+            .classList.remove('active')
+        }
+
+
 */
 
 // pegar valores ||
