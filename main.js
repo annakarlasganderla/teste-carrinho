@@ -23,23 +23,15 @@ const list = [
 
 const items = {
     // somar total de itens da lista
-    total () {
+    total (itens) {
         prod1 = list[0].amount
         prod2 = list[1].amount
         prod3 = list[2].amount
         prod4 = list[3].amount
 
-        let item = prod1 + prod2 + prod3 + prod4
+        itens = prod1 + prod2 + prod3 + prod4
 
-        if (item > 10) {
-            document.querySelector('.free')
-            .classList.add('active')
-        } else {
-            document.querySelector('.free')
-            .classList.remove('active')
-        }
-
-        return item 
+        return itens
     }
 }
 
@@ -98,9 +90,8 @@ list.forEach(function(list) {
 console.log(DOM.updateTotal())
 
 /*
-var total = 10
 
-if (total > 10) {
+if (itens > 10) {
             document.querySelector('.free')
             .classList.add('active')
         } else {
